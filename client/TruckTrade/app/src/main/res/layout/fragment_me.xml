@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:id="@+id/headphone"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/circle_write_line">
+
+                    <com.xk.trucktrade.ui.custom.CircleImageView
+                        android:id="@+id/civ_owner_phone"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/headphone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/headphone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/headphone"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_xh"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/round_rectangle_line_write"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_action_done" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="认证成功"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_m"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/headphone"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:id="@+id/tv_introduce"
+                    android:textColor="#ddffffff"
+                    android:textSize="@dimen/text_size_m" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/right_jiantou" />
+                <FrameLayout
+                    android:id="@+id/fl_tochangeInfo"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"></FrameLayout>
+            </RelativeLayout>
+
+            <com.xk.trucktrade.ui.custom.OptionItemView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:left_img="@mipmap/approve"
+                app:left_text="公司认证"
+                app:show_bottom_division="true"
+                app:show_jiantou="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+
+            <com.xk.trucktrade.ui.custom.OptionItemView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                app:left_img="@mipmap/my_trucks"
+                app:left_text="我的车辆"
+                android:id="@+id/my_trucks"
+                app:show_bottom_division="true"
+                app:show_jiantou="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+
+            <com.xk.trucktrade.ui.custom.OptionItemView
+                android:id="@+id/ov_exit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                app:left_img="@mipmap/exit"
+                app:left_text="退出登录"
+                app:show_bottom_division="true"
+                app:show_jiantou="false"
+                app:show_top_division="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

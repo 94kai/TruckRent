@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="179dp"
+    android:background="?selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_owner_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp">
+
+        <com.xk.trucktrade.ui.custom.CircleImageView
+            android:id="@+id/civ_owner_phone"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/headphone" />
+
+        <TextView
+            android:id="@+id/tv_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/civ_owner_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="薛凯"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_xh" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_owner_name"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:background="@color/scheme_green"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="实"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_s" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:background="@android:color/holo_orange_dark"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="公"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ic_call"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:src="@mipmap/icon_call" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/ic_call"
+        android:layout_toRightOf="@id/rl_owner_info"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_start_point"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="太原"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_size_xh" />
+
+            <ImageView
+                android:id="@+id/iv_to"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_start_point"
+                android:src="@mipmap/icon_to" />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_to"
+                android:text="榆次"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_size_xh" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="装车时间:"
+                android:textSize="@dimen/text_size_h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="2016-10-11"
+
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_h" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="货"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="干海带"
+
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="22.0吨"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="22方"
+
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="袋装"
+
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10袋"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_m" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="需"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="整车"
+
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="高栏车"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="6米"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_size_m" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="太原到榆次 一顿多少钱 这是介绍信息这是介绍信息这是介绍信息这是介绍信息这是介绍信息"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_m" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000.21公里"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_size_s" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32分钟前"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

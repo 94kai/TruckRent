@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/ib_left"
+        style="?android:actionButtonStyle"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/toolbar_button_padding"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        tools:src="@mipmap/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_left"
+        style="?android:actionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="左侧按钮"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_h"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:maxWidth="250dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_xxh"
+        tools:text="@string/app_name" />
+
+
+    <ImageButton
+        android:id="@+id/ib_right"
+        style="?android:actionButtonStyle"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/toolbar_button_padding"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        tools:src="@mipmap/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        style="?android:actionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_h"
+        android:visibility="gone"
+        tools:text="右侧按钮" />
+</RelativeLayout>

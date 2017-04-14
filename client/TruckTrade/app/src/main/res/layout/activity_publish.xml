@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xk.trucktrade.ui.custom.MToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="装车日期"
+                    android:textSize="@dimen/text_size_h" />
+            </LinearLayout>
+
+            <com.xk.trucktrade.ui.custom.OptionItemView
+                android:id="@+id/otv_select_load_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:left_img="@mipmap/date_icon"
+                app:left_text="请选择装车日期"
+                app:show_bottom_division="true"
+                app:show_jiantou="true"
+                app:show_top_division="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="路线"
+                    android:textSize="@dimen/text_size_h" />
+            </LinearLayout>
+
+            <com.xk.trucktrade.ui.custom.OptionItemView
+                android:layout_width="match_parent"
+                android:id="@+id/otv_select_start_place"
+
+                android:layout_height="50dp"
+                app:left_img="@mipmap/start_place"
+                app:left_text="请选择出发地址"
+                app:show_jiantou="true"
+                app:show_top_division="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+
+            <com.xk.trucktrade.ui.custom.OptionItemView
+                android:id="@+id/otv_select_exact_start_place"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:left_img="@mipmap/exact_start_place"
+                app:left_text="请选择精确地址"
+                app:show_jiantou="true"
+                app:show_top_division="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+
+            <com.xk.trucktrade.ui.custom.OptionItemView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/otv_select_stop_place"
+
+                app:left_img="@mipmap/stop_place"
+                app:left_text="请选择到达地址"
+                app:show_bottom_division="true"
+                app:show_jiantou="true"
+                app:show_top_division="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择车辆"
+                    android:textSize="@dimen/text_size_h" />
+            </LinearLayout>
+
+            <com.xk.trucktrade.ui.custom.OptionItemView
+                android:layout_width="match_parent"
+                android:id="@+id/otv_select_truck"
+
+                android:layout_height="50dp"
+                app:left_img="@mipmap/my_trucks"
+                app:left_text="选择出发的车辆"
+                app:show_bottom_division="true"
+                app:show_jiantou="true"
+                app:show_top_division="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text=" "
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="备注"
+                    android:textSize="@dimen/text_size_h" />
+            </LinearLayout>
+
+                <com.xk.trucktrade.ui.custom.OptionItemView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:left_img="@mipmap/introduce"
+                android:id="@+id/otv_add_introduce"
+
+                app:left_text="添加备注信息"
+                app:show_bottom_division="true"
+                app:show_jiantou="true"
+                app:show_top_division="true"></com.xk.trucktrade.ui.custom.OptionItemView>
+            <Button
+                android:id="@+id/btn_publish"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/btn_login"
+                android:text="发布车源信息"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_h" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+

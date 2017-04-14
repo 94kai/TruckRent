@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="round" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="OptionItemView">
+        <attr name="show_top_division" format="boolean" />
+        <attr name="show_bottom_division" format="boolean" />
+        <attr name="left_text" format="string" />
+        <attr name="right_text" format="string" />
+        <attr name="show_img" format="boolean" />
+        <attr name="left_img" format="reference" />
+        <attr name="show_jiantou" format="boolean" />
+        <attr name="mbackground" format="color" />
+        <attr name="show_xing" format="boolean" />
+        <attr name="right_img" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="OptionItemView2">
+        <!--<attr name="show_top_division" format="boolean" />-->
+        <!--<attr name="show_bottom_division" format="boolean" />-->
+        <!--<attr name="left_text" format="string" />-->
+        <!--<attr name="right_text" format="string" />-->
+        <!--<attr name="mbackground" format="color" />-->
+
+    </declare-styleable>
+</resources>

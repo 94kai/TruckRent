@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xk.trucktrade.ui.custom.MToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.xk.trucktrade.ui.custom.OptionItem2View
+                    android:id="@+id/oi2v_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:left_text="本人头像"
+                    app:show_img="true"
+                    app:show_top_division="true"
+                    app:show_xing="true"></com.xk.trucktrade.ui.custom.OptionItem2View>
+
+                <com.xk.trucktrade.ui.custom.OptionItem2View
+                    android:id="@+id/oi2v_name"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    app:left_text="姓名"
+                    app:right_text="无名小卒"
+                    app:show_bottom_division="true"
+                    app:show_img="false"
+                    app:show_top_division="true"
+                    app:show_xing="true"></com.xk.trucktrade.ui.custom.OptionItem2View>
+
+                <com.xk.trucktrade.ui.custom.OptionItem2View
+                    android:id="@+id/oi2v_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    app:left_text="地区"
+                    app:right_text="请选择"
+                    app:show_bottom_division="true"
+                    app:show_img="false"
+                    app:show_top_division="true"
+                    app:show_xing="false"></com.xk.trucktrade.ui.custom.OptionItem2View>
+
+                <com.xk.trucktrade.ui.custom.OptionItem2View
+                    android:id="@+id/oi2v_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:left_text="个人简介"
+                    app:right_text="请填写"
+
+                    app:show_bottom_division="true"
+                    app:show_img="false"
+                    app:show_xing="false"></com.xk.trucktrade.ui.custom.OptionItem2View>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_get_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/fl_other"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></FrameLayout>
+
+            <LinearLayout
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="通过相机拍摄" />
+
+                <Button
+                    android:id="@+id/btn_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="从相册中选取" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

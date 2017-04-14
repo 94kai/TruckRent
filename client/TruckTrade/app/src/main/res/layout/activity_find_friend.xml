@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:orientation="vertical">
+
+    <com.xk.trucktrade.ui.custom.MToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_find_friend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/round_rectangle_write">
+
+        <com.xk.trucktrade.ui.custom.autoqueryedittext.SearchEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/et_search"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_rectangle_write"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/text_size_xh" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_my_cared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="用户列表" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_friend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

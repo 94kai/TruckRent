@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_button_padding">16dp</dimen>
+
+    <dimen name="tab_height_virtual">50dp</dimen>
+    <dimen name="tab_height_real">65dp</dimen>
+
+    <dimen name="text_size_s">12sp</dimen>
+    <dimen name="text_size_m">14sp</dimen>
+    <dimen name="text_size_h">16sp</dimen>
+    <dimen name="text_size_xh">18sp</dimen>
+    <dimen name="text_size_xxh">20sp</dimen>
+    <dimen name="text_size_xxxh">24sp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="child_view_margin">8dp</dimen>
+    <dimen name="text_margin">4dp</dimen>
+
+    <dimen name="card_margin">0dp</dimen>
+
+
+
+    <dimen name="article_cover_size">78dp</dimen>
+
+    <dimen name="comment_avatar_size">55dp</dimen>
+
+    <!-- CommentFragment 底部的 "写评论" 的高度 -->
+    <dimen name="comment_bar_height">53dp</dimen>
+
+    <dimen name="post_image_list_item_size">80dp</dimen>
+
+    <dimen name="edit_text_left_padding">100dp</dimen>
+
+    <dimen name="config_icon_size">48dp</dimen>
+    <dimen name="config_icon_padding">12dp</dimen>
+</resources>

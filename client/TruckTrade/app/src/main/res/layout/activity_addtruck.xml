@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xk.trucktrade.ui.custom.MToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="车牌号"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+
+                <EditText
+                    android:id="@+id/et_truck_card_number"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/round_rectangle_line_secondcolor"
+                    android:hint="请输入车牌号"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/secondary_text"
+                    android:textColorHint="@color/secondary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+                <!--出产日期 长 宽 高 重 种类 车牌 图片-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="车型"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+
+                <LinearLayout
+                    android:id="@+id/ll_select_truck_type"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/round_rectangle_line_secondcolor"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_truck_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="请选择车型"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_size_xxh" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/right_jiantou" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="载重"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_rectangle_line_secondcolor"
+                    android:hint="输入载重"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/secondary_text"
+                    android:textColorHint="@color/secondary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"
+                    android:text="吨"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="尺寸"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_length"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_rectangle_line_secondcolor"
+                            android:hint="长"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/secondary_text"
+                            android:textColorHint="@color/secondary_text"
+                            android:textSize="@dimen/text_size_xxh" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="米"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_size_xxh" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_width"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_rectangle_line_secondcolor"
+                            android:hint="宽"
+                            android:inputType="number"
+
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/secondary_text"
+                            android:textColorHint="@color/secondary_text"
+                            android:textSize="@dimen/text_size_xxh" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="米"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_size_xxh" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_height"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_rectangle_line_secondcolor"
+                            android:hint="高"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/secondary_text"
+                            android:textColorHint="@color/secondary_text"
+                            android:textSize="@dimen/text_size_xxh" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="米"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/text_size_xxh" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="出厂日期"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+
+                <LinearLayout
+                    android:id="@+id/ll_factory_date"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/round_rectangle_line_secondcolor"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_factory_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="请选择出厂日期"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_size_xxh" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/right_jiantou" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_xh" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="行车证"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_size_xxh" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/round_rectangle_line_secondcolor"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:text="点击上传"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_size_xxxh" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_truck"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/btn_login"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_h" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

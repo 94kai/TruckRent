@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xk.trucktrade.ui.custom.MToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"></com.xk.trucktrade.ui.custom.MToolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.TextureMapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.baidu.mapapi.map.TextureMapView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="50dp"
+            android:src="@mipmap/current_position" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size_xxh"
+                android:layout_height="wrap_content"
+                android:text="当前位置：" /><TextView
+                android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_xxh"
+
+            android:layout_height="wrap_content"
+                android:id="@+id/address"
+            android:text="移动地图到您的车源位置"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

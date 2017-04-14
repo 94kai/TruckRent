@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_find_friend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/round_rectangle_write">
+
+        <ImageView
+            android:id="@+id/ic_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/search_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ic_search"
+            android:gravity="center_vertical"
+            android:text="查找好友"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/text_size_xh" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_no_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂时没有新消息"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_size_h" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/conversationListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

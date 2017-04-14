@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:id="@+id/root"
+        android:clickable="true"
+        android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_truckcardnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:text="晋J-BG347"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_xxh" />
+
+        <TextView
+            android:id="@+id/tv_variety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_truckcardnumber"
+            android:text="保温"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_size_xxh" />
+
+        <TextView
+            android:id="@+id/tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_truckcardnumber"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:text="长3米"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_h" />
+
+        <TextView
+            android:id="@+id/tv_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_truckcardnumber"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/tv_length"
+            android:text="宽3米"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_h" />
+
+        <TextView
+            android:id="@+id/tv_hight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_truckcardnumber"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/tv_width"
+            android:text="高3米"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_h" />
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_truckcardnumber"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/tv_hight"
+            android:text="载重2吨"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_size_h" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/select_yes" />
+</LinearLayout>
+</FrameLayout>

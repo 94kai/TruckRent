@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:id="@+id/et_phonenumber"
+        style="@style/AppTheme.LoginEditText"
+        android:layout_marginTop="@dimen/child_view_margin"
+        android:hint="设置您的手机号码"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tv_phonenumber_label"
+        android:layout_width="@dimen/edit_text_left_padding"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et_phonenumber"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="手机号码"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_size_h" />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/AppTheme.LoginEditText"
+        android:layout_below="@id/et_phonenumber"
+        android:layout_marginTop="@dimen/child_view_margin"
+        android:hint="设置您的密码"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_password_label"
+        android:layout_width="@dimen/edit_text_left_padding"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et_password"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="密码"
+        android:textSize="@dimen/text_size_h" />
+
+    <EditText
+        android:id="@+id/et_password1"
+        style="@style/AppTheme.LoginEditText"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="@dimen/child_view_margin"
+        android:hint="请确认您的密码"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_password_label1"
+        android:layout_width="@dimen/edit_text_left_padding"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et_password1"
+        android:gravity="center_vertical|right"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="确认密码"
+        android:textSize="@dimen/text_size_h" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_password1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/btn_login"
+        android:text="注册"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_h" />
+
+    <TextView
+        android:id="@+id/tv_action_forget_password"
+        style="@style/AppTheme.ClickableTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/child_view_margin"
+        android:padding="@dimen/child_view_margin"
+        android:text="忘记密码"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_m"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>
