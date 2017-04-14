@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name></display-name>
+	<servlet>
+		<servlet-name>RigisterServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.RigisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RigisterServlet</servlet-name>
+		<url-pattern>/servlet/RigisterServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/servlet/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AutoLoginServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.AutoLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AutoLoginServlet</servlet-name>
+		<url-pattern>/servlet/AutoLoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/servlet/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TruckServlet</servlet-name>
+		<url-pattern>/servlet/TruckServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TruckServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.TruckServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TruckSourceServlet</servlet-name>
+		<url-pattern>/servlet/TruckSourceServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TruckSourceServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.TruckSourceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadHeadServlet</servlet-name>
+		<url-pattern>/servlet/UploadHeadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UploadHeadServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.UploadHeadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUserinfoServlet</servlet-name>
+		<url-pattern>/servlet/UpdateUserinfoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdateUserinfoServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.UpdateUserinfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FriendServlet</servlet-name>
+		<url-pattern>/servlet/FriendServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FriendServlet</servlet-name>
+		<servlet-class>com.truck.Servlet.FriendServlet</servlet-class>
+	</servlet>
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

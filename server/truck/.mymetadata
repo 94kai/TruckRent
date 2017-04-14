@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="truct"
+  id="myeclipse.1466729537098"
+  context-root="/truct"
+  j2ee-spec="6.0"
+  archive="truct.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
